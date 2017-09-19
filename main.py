@@ -70,7 +70,7 @@ def main():
 
         cv2.imshow("Face Detector", img)
         k = cv2.waitKey(30) & 0xff
-        if k == 27 or top2pupil.__len__() > 100:
+        if k == 27 or top2pupil.__len__() > 40:
             break
     cap.release()
     cv2.destroyAllWindows()
